@@ -1,0 +1,124 @@
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/TTCommons-Regular.ttf");
+}
+
+::-moz-selection {
+  background: #5bc0de;
+  color: #fff;
+}
+
+::selection {
+  background: #5bc0de;
+  color: #fff;
+}
+
+* {
+  font-family: myFont;
+  scroll-behavior: smooth;
+  font-size: 1.03em;
+  line-height: 1.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+mark {
+  background-color: rgba(0, 0, 0, 0);
+  color: #17a2b8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.p-50-0 {
+  padding: 50px 0px;
+}
+
+.aunderline {
+  text-decoration: underline;
+}
+
+.brd-none {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.naslovna {
+  background-image: url(../img/naslovna1.png);
+  height: 100%;
+  padding: 150px 0px 150px 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.proizvodi a:hover {
+  border: 1px solid #dee2e6;
+}
+
+.proizvodi a img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.o-nama {
+  background-image: url(../img/naslovna2.jpg);
+}
+
+.klijenti {
+  background-image: url(../img/naslovna3.jpg);
+}
+
+.koraci img {
+  max-width: 30%;
+}
+
+.dizajneri img {
+  max-width: 70%;
+}
+
+.order-form-input {
+  width: 100%;
+  padding: 8px 8px;
+  font-size: 0.9em;
+  border-color: #17a2b8;
+}
+
+@media only screen and (max-width: 991px) {
+  .bn {
+    border-right: none !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  nav a {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  nav button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  nav #korpa {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .p-50-0 {
+    padding: 50px 0px;
+  }
+  .dn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

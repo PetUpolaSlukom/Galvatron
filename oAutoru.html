@@ -12,23 +12,49 @@
         crossorigin="anonymous"/> -->
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
-    <meta name="keywords" content="gavaltron, prodaja, namestaja, klijenti, projekti"/>
-    <meta name="description" content="Dizajniranje i ostvežavanje radnog prostora yasnovano na najmodernijem dizajnu i iyradi visokog kvaliteta za velike kompanije i firme sa velikim radim prostorom.">
+    <meta name="keywords" content="gavaltron, autor, web, dizajn, portfolio"/>
+    <meta name="description" content=""> <!-- opis -->
 </head>
 <body>
-    <div class="row">
-        <div class="col s3 collection brd-none p-50-0">
-            <a href="index.html"><img src="img/logo.jpg" class="collection-header center" alt="logo"/></a>
-            <ul>
-                <li><a href="index.html" class="collection-item">Početna</li></a>
-                <li><a href="katalog.html" class="collection-item">Katalog</li></a>
-                <li><a href="projekti.html" class="collection-item">Projekti</li></a>
-                <li><a href="#" class="collection-item">Blog</li></a>
+    <nav id="navm" class="white h100">
+        <div class="nav-wrapper valign-wrapper h100">
+            <a href="#" class="sidenav-trigger grey-text" data-target="mobile-nav">
+                MENI
+            </a>
+            <a href="index.html" class="brand-logo"><img src="img/logo.jpg" /></a>
+            <ul class="right hide-on-small-and-down">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
-        </div>  
-        <div class="col s9">
-          <!-- Teal page content  -->
         </div>
-  
-      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="projekti.html">Projekti</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="p-50-0 container row">
+        <div class=" container row col m12 dflex oautoru p-50-0">
+            <div class="col s7 m6 l5 xl4 autorslika">
+                <img src="img/autor.jpg" alt="autor" class="responsive-img autorSlika"/>
+            </div>
+            <div id="omeni" class="col s12 m10 l7 valign-wrappe">
+                <h2>Đorđe Minić</h2>
+                <p>Student sam <a href="https://www.ict.edu.rs/" target="_blanc"><mark>Visoke ICT</mark></a> škole u Beogradu. U Novoj Varoši sam završio muzičku školu, ali kada zakoračio u svet programiranja shvatio sam da sam na pravom putu. Pored znatiželje i volje da naučim i poboljšam moje znanje iz oblasi IT, postao sam ljubitelj novih izazova i iskustava. Kontaktirajte me, otvoren za saradnju i nove projekte. </p>
+            </div>
+        </div>
+        <h4 class=" center-align sivo">Kako do mene</h4>
+        <div class="row col m12 dflex boxnh p-20-0">
+            <a href="https://petupolaslukom.000webhostapp.com/" target="_blanc" class="col m2 center-align box p-20-0">Portfolio</a>
+            <a href="href=tel:+381 69 131 24 20" target="_blanc"class="col m2 center-align box p-20-0"><i class="fas fa-phone-alt"></i> +381 69 131 24 20</a>
+            <a href="mailto:djordje.minic.135.19@ict.edu.rs" target="_blanc" class="col m2 center-align box p-20-0"><i class="fas fa-envelope"></i> djordje@ict.edu.rs</a>
+            <a href="https://github.com/PetUpolaSlukom" target="_blanc" class="col m2 center-align box p-20-0"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="js/materialize.js"></script>
 </body>

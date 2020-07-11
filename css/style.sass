@@ -3,11 +3,14 @@
     src: url("../fonts/TTCommons-Regular.ttf")
 $space: 1em
 $c-grey: #dee2e6
+$d-grey: #6c757d
+$blue: #17a2b8
 ::selection 
   background: #5bc0de
   color: #fff
-*
+html, body
     font-family: myFont
+*
     scroll-behavior: smooth
     font-size: 1.03em
     line-height: 1.6
@@ -20,14 +23,22 @@ ul
 a
     &:hover
         text-decoration: none
+.info
+    color: $blue
 .p-50-0
-        padding: 50px 0px
+    padding: 50px 0px !important
+.p-10-0
+    padding: 10px 0px
+.h100
+    height: 100px !important
 .aunderline
     text-decoration: underline
 .brd-none
     border: none
 textarea
     resize: none
+.navbar
+    padding: 10px auto
 .naslovna
     background-image: url(../img/naslovna1.png)
     height: 100%
@@ -58,10 +69,89 @@ textarea
     font-size: 0.9em
     border-color: #17a2b8
 //MATERIALIZE
-
-@media only screen and (max-width: 991px)
+#navm
+    box-shadow: none
+    padding: 1rem
+    .sidenav-trigger
+        height: auto
+    .nav-wrapper
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        a, ul
+            position: relative
+            color: $d-grey
+        ul 
+            a
+                font-size: 1.3rem
+                padding: 0px 25px
+                &:hover
+                    background-color: white
+        .matkorpa
+            i
+                line-height: auto
+                height: auto
+    .btn 
+        height: auto
+        background-color: $blue
+        border-radius: 5px
+        font-size: 1.25rem
+        padding: 5px 16
+.dflex
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+.oautoru
+    border-top: 1px solid $d-grey
+    .autorslika
+        height: inherit !important
+        img
+            width: 100%
+    #omeni
+        p
+            font-size: 1.15em
+.box
+    background-color: white
+    color: $blue
+    border-radius: 5px
+    border: 1px solid $blue
+    left: 0px !important
+    margin-left: 0px !important
+    &:hover
+        background-color: $blue
+        color: white
+        border: 1px solid $blue
+.row
+    &::after
+        display: none
+.sivo
+    color: $d-grey
+.boxnh
+    border-top: 1px solid $d-grey
+    border-bottom: 1px solid $d-grey
+    color: white
+.p-20-0
+    padding: 20px 0px  !important
+@media only screen and (min-width: 601px)
+    nav a.sidenav-trigger
+        display: none
+@media only screen and (min-width: 1200px)
+    #omeni
+        p
+            font-size: 1.3em !important
+@media only screen and (max-width: 992px)
+    nav .brand-logo
+        transform: none
+        left: auto
+    #navm
+        .nav-wrapper       
+            ul
+                a
+                    padding: 0px 7px
     .bn
         border-right: none !important
+    .autorslika
+        margin: 0px auto
 @media only screen and (max-width: 575px)
     nav
         a

@@ -191,6 +191,8 @@ textarea {
   border: 1px solid #17a2b8;
   left: 0px !important;
   margin-left: 0px !important;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .box:hover {
@@ -211,6 +213,7 @@ textarea {
   border-top: 1px solid #6c757d;
   border-bottom: 1px solid #6c757d;
   color: white;
+  width: 100%;
 }
 
 .p-20-0 {
@@ -228,8 +231,11 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
-  #omeni p {
+  .oautoru #omeni p {
     font-size: 1.3em !important;
+  }
+  .boxhn .box {
+    font-size: 1.05em !important;
   }
 }
 

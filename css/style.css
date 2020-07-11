@@ -43,7 +43,7 @@ a:hover {
 }
 
 .p-50-0 {
-  padding: 50px 0px !important;
+  padding: 50px 0px;
 }
 
 .p-10-0 {
@@ -215,6 +215,10 @@ textarea {
 
 .p-20-0 {
   padding: 20px 0px  !important;
+}
+
+.pt-50 {
+  padding-top: 50px !important;
 }
 
 @media only screen and (min-width: 601px) {

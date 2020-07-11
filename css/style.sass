@@ -14,7 +14,7 @@ html, body
     scroll-behavior: smooth
     font-size: 1.03em
     line-height: 1.6
-    transition: 0.4s
+    transition: 0.2s
 mark
     background-color: rgba(0,0,0,0)
     color:#17a2b8
@@ -87,6 +87,7 @@ textarea
                 padding: 0px 25px
                 &:hover
                     background-color: white
+                    color: $blue
         .matkorpa
             i
                 line-height: auto
@@ -97,6 +98,17 @@ textarea
         border-radius: 5px
         font-size: 1.25rem
         padding: 5px 16
+.absolute
+    position: fixed
+    width: 10px
+    font-size: 2em
+    left: 130px
+    top: 150px
+    a
+        color: $d-grey
+        padding: 5px
+        &:hover
+            color: $blue
 .dflex
     display: flex
     justify-content: space-around
@@ -157,10 +169,16 @@ textarea
             ul
                 a
                     padding: 0px 7px
+    .absolute
+        left: 40px
     .bn
         border-right: none !important
     .autorslika
         margin: 0px auto
+@media only screen and (max-width: 601px)
+    .absolute
+        left: auto
+        right: 30px
 @media only screen and (max-width: 575px)
     nav
         a

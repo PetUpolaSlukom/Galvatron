@@ -21,8 +21,8 @@ html, body {
   scroll-behavior: smooth;
   font-size: 1.03em;
   line-height: 1.6;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 mark {
@@ -143,6 +143,7 @@ textarea {
 
 #navm .nav-wrapper ul a:hover {
   background-color: white;
+  color: #17a2b8;
 }
 
 #navm .nav-wrapper .matkorpa i {
@@ -156,6 +157,23 @@ textarea {
   border-radius: 5px;
   font-size: 1.25rem;
   padding: 5px 16;
+}
+
+.absolute {
+  position: fixed;
+  width: 10px;
+  font-size: 2em;
+  left: 130px;
+  top: 150px;
+}
+
+.absolute a {
+  color: #6c757d;
+  padding: 5px;
+}
+
+.absolute a:hover {
+  color: #17a2b8;
 }
 
 .dflex {
@@ -248,11 +266,21 @@ textarea {
   #navm .nav-wrapper ul a {
     padding: 0px 7px;
   }
+  .absolute {
+    left: 40px;
+  }
   .bn {
     border-right: none !important;
   }
   .autorslika {
     margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .absolute {
+    left: auto;
+    right: 30px;
   }
 }
 

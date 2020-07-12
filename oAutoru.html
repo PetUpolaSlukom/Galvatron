@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- , animacija -->
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>O Autoru • Gavaltron</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous"/> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
     <meta name="keywords" content="gavaltron, autor, web, dizajn, portfolio"/>
@@ -37,10 +35,10 @@
         <li><a href="blog.html">Blog</a></li>
     </ul>
     <div class="absolute dflex ">
-        <a href="www.facebook.com" target="_blanc"><i class="fab fa-facebook-f"></i></a>
-        <a href="www.instagram.com" target="_blanc"><i class="fab fa-instagram"></i></a>
-        <a href="www.twitter.com" target="_blanc"><i class="fab fa-twitter"></i></a>
-        <a href="www.linkedin.com" target="_blanc"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/pet.upola.slukom" target="_blanc"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/pet_upola_slukom/" target="_blanc"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/petupola_slukom" target="_blanc"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/djordje-minic-088343198/" target="_blanc"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <div class="container row">
         <div class="pt-50 container row col m12 dflex oautoru">
@@ -52,7 +50,11 @@
                 <p>Student sam <a href="https://www.ict.edu.rs/" target="_blanc"><mark>Visoke ICT</mark></a> škole u Beogradu. U Novoj Varoši sam završio muzičku školu, ali kada sam zakoračio u svet programiranja shvatio sam da sam na pravom putu. Pored znatiželje i volje da unapredim i poboljšam moje znanje iz oblasi IT, takođe, sve više sam zainteresovan za nove izazove i rad u oblasti grafičkog dizajna. Kontaktirajte me, otvoren za saradnju i nove projekte. </p>
             </div>
         </div>
-        <h4 class=" center-align sivo">Kako do mene</h4>
+        <div id="kontaktForma" class="container dflex valign-wrapper boxnh p-50-0">
+            <h4 class="sivo col s12 m5 center-align">Kontaktiraj me lako</h4>
+            <button data-target="modal1" class="col s12 m5 xl4 btn modal-trigger">Pošalji direktnu poruku</button>
+        </div>
+        <h4 class="center-align sivo">Kako do mene</h4>
         <div class="row col m12 dflex boxnh p-20-0">
             <a href="https://petupolaslukom.000webhostapp.com/" target="_blanc" class="col s8 m5 xl2 center-align box p-20-0">Portfolio</a>
             <a href="href=tel:+381 69 131 24 20" target="_blanc"class="col s8 m5 xl2 center-align box p-20-0"><i class="fas fa-phone-alt"></i> 069 1312 420</a>
@@ -60,8 +62,49 @@
             <a href="https://github.com/PetUpolaSlukom" target="_blanc" class="col s8 m5 xl2 center-align box p-20-0"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </div>
-    
-    
+    <div class="container">
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Kontaktirajte brzo i jednostavno</h4>
+                <p class="p-20-0">Popunite svako polje kako bi unos bio validan.</p>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix info">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Ime i Prezime</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix info">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">Kontakt telefon</label>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix info">mode_edit</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Uneti poruku</label>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        <div class="modal-footer">
+            <div class="container center-align">
+                <a href="#!" class="modal-close waves-effect btn-flat posalji">Pošalji</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+     
     
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>

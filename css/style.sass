@@ -92,12 +92,26 @@ textarea
             i
                 line-height: auto
                 height: auto
+.btn-flat
+    text-transform: none
+    font-size: 1em
+#kontaktForma
+    h4, button
+        margin: 0px
     .btn 
         height: auto
         background-color: $blue
         border-radius: 5px
-        font-size: 1.25rem
         padding: 5px 16
+        font-size: 1.15em
+        line-height: 2.5em
+        text-transform: none
+        border-radius: 5px
+        border: 1px solid $blue
+        &:hover
+            background-color: white
+            color: $blue
+            box-shadow: none
 .absolute
     position: fixed
     width: 10px
@@ -115,6 +129,7 @@ textarea
     flex-wrap: wrap
 .oautoru
     border-top: 1px solid $d-grey
+    margin-bottom: 50px
     .autorslika
         height: inherit !important
         img
@@ -143,12 +158,24 @@ textarea
 .boxnh
     border-top: 1px solid $d-grey
     border-bottom: 1px solid $d-grey
-    color: white
     width: 100%
+    margin-bottom: 50px
 .p-20-0
     padding: 20px 0px  !important
 .pt-50
     padding-top: 50px !important
+.modal
+    min-height: 400px
+    p
+        border-bottom: 1px solid $c-grey
+#icon_prefix, #icon_telephone, #icon_prefix2
+    border: none
+    border-bottom: 1px solid $blue
+.posalji
+    background-color: $blue
+    color: white
+    margin: 0px auto
+    letter-spacing: 0.1em
 @media only screen and (min-width: 601px)
     nav a.sidenav-trigger
         display: none
@@ -179,6 +206,9 @@ textarea
     .absolute
         left: auto
         right: 30px
+    #kontaktForma
+        h4
+            margin-bottom: 20px
 @media only screen and (max-width: 575px)
     nav
         a
